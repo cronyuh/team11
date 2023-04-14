@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png">
+    <title>F8-DiemCaoNhat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="header" id="head">
+        <div class="logo">
+            <a href="http://127.0.0.1:5500/index.html">
+                <img src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png" alt="F8">
+            </a>
+            <h4 class="logo-text">Học Lập Trình Để Đi Làm</h4>
+        </div>
+        <div class="seach">
+            <div>
+                <div class="seach seach-real">
+                    <div class="seachitem">
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <input class="Search_input" spellcheck="false" placeholder="Tìm kiếm khóa học, bài viết, video, ..."
+                        value="">
+                </div>
+            </div>
+        </div>
+        <div class="dangnhap">
+            <a href="login.html" class="btn">Đăng nhập</a>
+        </div>
+    </div>
+    <div class="withsidebar">
+        <div class="sidewrap">
+            <div class="Sidebar_wraper" id="sidebar">
+                <div>
+                    <div class="buttonwraper" aria-expanded="false">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-prefix="plus"
+                            class="svg-inline--fa fa-plus CreateButton_icon" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="Sidebar-list">
+                    <li>
+                        <a aria-current="page" class="Sidebar_itemBtn Sidebar_active" href="http://127.0.0.1:5500/">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house"
+                                class="svg-inline--fa fa-house " role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z">
+                                </path>
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li><a class="Sidebar_itemBtn Sidebar_active" href="leaning-paths"><svg aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="road" class="svg-inline--fa fa-road "
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M256 96C256 113.7 270.3 128 288 128C305.7 128 320 113.7 320 96V32H394.8C421.9 32 446 49.08 455.1 74.63L572.9 407.2C574.9 413 576 419.2 576 425.4C576 455.5 551.5 480 521.4 480H320V416C320 398.3 305.7 384 288 384C270.3 384 256 398.3 256 416V480H54.61C24.45 480 0 455.5 0 425.4C0 419.2 1.06 413 3.133 407.2L120.9 74.63C129.1 49.08 154.1 32 181.2 32H255.1L256 96zM320 224C320 206.3 305.7 192 288 192C270.3 192 256 206.3 256 224V288C256 305.7 270.3 320 288 320C305.7 320 320 305.7 320 288V224z">
+                                </path>
+                            </svg>
+                            <span>Lộ trình</span>
+                        </a>
+                    </li>
+                    <li><a class="Sidebar_itemBtn Sidebar_active" href="course"><svg aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="lightbulb"
+                                class="svg-inline--fa fa-lightbulb " role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512">
+                                <path fill="currentColor"
+                                    d="M112.1 454.3c0 6.297 1.816 12.44 5.284 17.69l17.14 25.69c5.25 7.875 17.17 14.28 26.64 14.28h61.67c9.438 0 21.36-6.401 26.61-14.28l17.08-25.68c2.938-4.438 5.348-12.37 5.348-17.7L272 415.1h-160L112.1 454.3zM191.4 .0132C89.44 .3257 16 82.97 16 175.1c0 44.38 16.44 84.84 43.56 115.8c16.53 18.84 42.34 58.23 52.22 91.45c.0313 .25 .0938 .5166 .125 .7823h160.2c.0313-.2656 .0938-.5166 .125-.7823c9.875-33.22 35.69-72.61 52.22-91.45C351.6 260.8 368 220.4 368 175.1C368 78.61 288.9-.2837 191.4 .0132zM192 96.01c-44.13 0-80 35.89-80 79.1C112 184.8 104.8 192 96 192S80 184.8 80 176c0-61.76 50.25-111.1 112-111.1c8.844 0 16 7.159 16 16S200.8 96.01 192 96.01z">
+                                </path>
+                            </svg>
+                            <span>Học</span>
+                        </a>
+                    </li>
+                    <li><a class="Sidebar_itemBtn Sidebar_active" href="/blog"><svg aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="newspaper" class="svg-inline--fa fa-newspaper " role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M480 32H128C110.3 32 96 46.33 96 64v336C96 408.8 88.84 416 80 416S64 408.8 64 400V96H32C14.33 96 0 110.3 0 128v288c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V64C512 46.33 497.7 32 480 32zM272 416h-96C167.2 416 160 408.8 160 400C160 391.2 167.2 384 176 384h96c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 320h-96C167.2 320 160 312.8 160 304C160 295.2 167.2 288 176 288h96C280.8 288 288 295.2 288 304C288 312.8 280.8 320 272 320zM432 416h-96c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16h96c8.836 0 16 7.162 16 16C448 408.8 440.8 416 432 416zM432 320h-96C327.2 320 320 312.8 320 304C320 295.2 327.2 288 336 288h96C440.8 288 448 295.2 448 304C448 312.8 440.8 320 432 320zM448 208C448 216.8 440.8 224 432 224h-256C167.2 224 160 216.8 160 208v-96C160 103.2 167.2 96 176 96h256C440.8 96 448 103.2 448 112V208z">
+                                </path>
+                            </svg>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebarcontent">
+            <section class="index-module_grid index-module_fullWidth" style="max-width: 1920px;">
+                <div class="home_slideshow">
+                    <div class="slideshow_wraper">
+                        <div class="slick-slider slick-initialized" dir="ltr">
+                            <div class="Slideshow_arrow Slideshow_prev">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                                    class="svg-inline--fa fa-chevron-left " role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                        d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="slick-list">
+
+                                <div class="slideshow_items-1">
+                                    <div class="Slideshow_left">
+                                        <h2 class="Slideshow_heading"><a rel="noreferrer noopener noreferrer"
+                                                target="_blank" href="./htmlcss.html">Khóa học
+                                                HTML CSS Pro<span class="Slideshow_crownIcon"><img
+                                                        src="https://fullstack.edu.vn/static/media/crown_icon.3e4800f7485935ab6ea312a7080a85fe.svg"
+                                                        alt=""></span></a></h2>
+                                        <p class="Slideshow_desc">Đây là khóa học đầy đủ và chi tiết nhất bạn có
+                                            thể tìm thấy được ở trên Internet!</p>
+                                        <div><a rel="" class="Slideshow_ctaBtn__xcyon"
+                                                target="_blank" href="./htmlcss.html" >Tìm hiểu
+                                                thêm</a></div>
+                                    </div>
+                                    <div class="Slideshow_right"><a rel="noreferrer noopener noreferrer" target="_blank"
+                                            href="./htmlcss.html"><img class="Slideshow_img"
+                                                src="https://files.fullstack.edu.vn/f8-prod/banners/20/6308a6bf603a4.png"
+                                                alt="Khóa Học HTML CSS Pro" title="Khóa học HTML CSS Pro"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Slideshow_arrow Slideshow_next"><svg aria-hidden="true" focusable="false"
+                                    data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right "
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                        d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="home_wrapper">
+                    <div class="ScrollList_vertical">
+                        <div>
+                            <div class="ScrollList_heading-wrap">
+                                <h2 class="ScrollList_heading"><span rel="noreferrer" target="_self">Khóa học
+                                        Pro<span class="ScrollList_label">Mới</span></span></h2>
+                            </div>
+                        </div>
+                        <div class="ScrollList_body">
+                            <section class="index-module_row">
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link" title="HTML CSS Pro"
+                                            target="_self" href="./htmlcss.html"
+                                            style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa học</button> </a>
+                                        <h3 class="CommonItem_title"><a target="_self" href="/landing/htmlcss">HTML CSS
+                                                Pro</a></h3>
+                                        <div class="CourseItem_pro-icon"><img
+                                                src="https://fullstack.edu.vn/static/media/crown_icon.3e4800f7485935ab6ea312a7080a85fe.svg"
+                                                alt=""></div>
+                                        <div class="price"><span class="CourseItem_old-price">2.499.000đ</span><span
+                                                class="CourseItem_main-price">1.299.000đ</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><span class="CommonItem_thumb"
+                                            title="JavaScript Pro" target="_self"
+                                            style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/19/62f13cb607b4b.png);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa học</button></span>
+                                        <h3 class="CommonItem_title"><span target="_self">JavaScript Pro</span>
+                                        </h3>
+                                        <div class="CourseItem_pro-icon"><img
+                                                src="https://fullstack.edu.vn/static/media/crown_icon.3e4800f7485935ab6ea312a7080a85fe.svg"
+                                                alt=""></div>
+                                        <div class="price"></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><span class="CommonItem_thumb"
+                                            title="ReactJS Pro" target="_self"
+                                            style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/20/62f13dded314e.png);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa học</button></span>
+                                        <h3 class="CommonItem_title"><span target="_self">ReactJS Pro</span></h3>
+                                        <div class="CourseItem_pro-icon"><img
+                                                src="https://fullstack.edu.vn/static/media/crown_icon.3e4800f7485935ab6ea312a7080a85fe.svg"
+                                                alt=""></div>
+                                        <div class="price"></div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="ScrollList_vertical">
+                        <div>
+                            <p class="ScrollList_sub-heading"><strong>304.260+</strong> người khác đã học</p>
+                            <div class="ScrollList_heading-wrap">
+                                <h2 class="ScrollList_heading"><a rel="noreferrer" target="_self">Khóa học miễn phí<span
+                                            class="ScrollList_view-all-icon"></span></a></h2><a
+                                    class="ScrollList_view-all" rel="noreferrer" target="_self"
+                                    href="/learning-paths">Xem lộ trình<svg aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="chevron-right"
+                                        class="svg-inline--fa fa-chevron-right " role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path fill="currentColor"
+                                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="ScrollList_body-l">
+                            <section class="index-module_row">
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link" title="Kiến Thức Nhập Môn IT"
+                                            target="_self" href="/courses/lessons-for-newbie"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/7.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self"
+                                                href="/courses/lessons-for-newbie">Kiến Thức Nhập Môn IT</a></h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>103.447</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link"
+                                            title="Lập trình C++ cơ bản, nâng cao" target="_self"
+                                            href="/courses/lap-trinh-c-co-ban-toi-nang-cao"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self"
+                                                href="/courses/lap-trinh-c-co-ban-toi-nang-cao">Lập trình C++ cơ bản,
+                                                nâng cao</a></h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>6.416</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link"
+                                            title="HTML CSS từ Zero đến Hero" target="_self" href="/courses/html-css"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/2.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self" href="/courses/html-css">HTML CSS
+                                                từ Zero đến Hero</a></h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>156.463</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link"
+                                            title="Responsive Với Grid System" target="_self"
+                                            href="/courses/responsive-web-design"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/3.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self"
+                                                href="/courses/responsive-web-design">Responsive Với Grid System</a>
+                                        </h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>35.420</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link"
+                                            title="Lập Trình JavaScript Cơ Bản" target="_self"
+                                            href="/courses/javascript-co-ban"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/1.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self"
+                                                href="/courses/javascript-co-ban">Lập Trình JavaScript Cơ Bản</a></h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>103.269</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link"
+                                            title="Lập Trình JavaScript Nâng Cao" target="_self"
+                                            href="/courses/javascript-nang-cao"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/12.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self"
+                                                href="/courses/javascript-nang-cao">Lập Trình JavaScript Nâng Cao</a>
+                                        </h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>27.392</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link"
+                                            title="Làm việc với Terminal &amp; Ubuntu" target="_self"
+                                            href="/courses/windows-terminal-wsl"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/14/624faac11d109.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self"
+                                                href="/courses/windows-terminal-wsl">Làm việc với Terminal &amp;
+                                                Ubuntu</a></h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>11.502</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link"
+                                            title="Xây Dựng Website với ReactJS" target="_self" href="/courses/reactjs"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/13/13.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self" href="/courses/reactjs">Xây Dựng
+                                                Website với ReactJS</a></h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>44.801</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link" title="Node &amp; ExpressJS"
+                                            target="_self" href="/courses/nodejs"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/6.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self" href="/courses/nodejs">Node &amp;
+                                                ExpressJS</a></h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>30.744</span></div>
+                                    </div>
+                                </section>
+                                <section class="index-module_col index-module_c-12 index-module_m-4 index-module_l-3">
+                                    <div class="CommonItem_wrapper Home_courseItem"><a
+                                            class="CommonItem_thumb CommonItem_has-link"
+                                            title="App &quot;Đừng Chạm Tay Lên Mặt&quot;" target="_self"
+                                            href="/courses/tool-canh-bao-so-len-mat"
+                                            style="background-image: url(&quot;https://files.fullstack.edu.vn/f8-prod/courses/4/61a9e9e701506.png&quot;);"><button
+                                                class="Button_btn CommonItem_cta-btn">Xem khóa
+                                                học</button></a>
+                                        <h3 class="CommonItem_title"><a target="_self"
+                                                href="/courses/tool-canh-bao-so-len-mat">App "Đừng Chạm Tay Lên Mặt"</a>
+                                        </h3>
+                                        <div class="CourseItem_students-count"><svg aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="users" class="svg-inline--fa fa-users "
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                                </path>
+                                            </svg><span>7.279</span></div>
+                                    </div>
+                                </section>
+                            </section>
+                            
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+        </section>
+    </div>
+    <footer class="Footer_wrapper">
+        <section class="index-module_grid index-module_wide" style="max-width: 1100px;">
+            <section class="index-module_row">
+                <section
+                    class="index-module_col index-module_c-12 index-module_m-12 index-module_l-3">
+                    <div class="Footer_column">
+                        <div>
+                            <div class="Footer_column-top"><a href="/"><img class="Footer_top-logo"
+                                        src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png" alt="F8"></a>
+                                <h2 class="Footer_top-slogan">Học Lập Trình Để Đi Làm</h2>
+                            </div>
+                            <p class="Footer_contact-list+O">Điện thoại: <a
+                                    href="tel:0246.329.1102">0246.329.1102</a><br>Email: <a
+                                    href="mailto:contact@fullstack.edu.vn">contact@fullstack.edu.vn</a><br>Địa chỉ: Số
+                                26 Dương Đình Nghệ, Phường Yên Hòa, Quận Cầu Giấy, TP. Hà Nội</p>
+                            <div><a href="https://www.dmca.com/Protection/Status.aspx?id=1b325c69-aeb7-4e32-8784-a0009613323a&amp;refurl=https%3a%2f%2ffullstack.edu.vn%2f&amp;rlo=true"
+                                    target="_blank" rel="noreferrer" title="DMCA Protected"><img
+                                        class="Footer_dmca" src="https://fullstack.edu.vn/static/media/dmca.2593d9ecf1c982e3c3a2.png"
+                                        alt="DMCA"></a></div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="index-module_col index-module_c-12 index-module_m-4 index-module_l-2">
+                    <div class="Footer_column">
+                        <div>
+                            <h2 class="Footer_heading-b">Về F8</h2>
+                            <ul class="Footer_list">
+                                <li><a href="/about-us">Giới thiệu</a></li>
+                                <li><a href="/contact-us">Liên hệ</a></li>
+                                <li><a href="/terms">Điều khoản</a></li>
+                                <li><a href="/privacy">Bảo mật</a></li>
+                                <li><a href="/careers">Cơ hội việc làm</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="index-module_col index-module_c-12 index-module_m-4 index-module_l-2">
+                    <div class="Footer_column">
+                        <div>
+                            <h2 class="Footer_heading-b">Sản phẩm</h2>
+                            <ul class="Footer_list">
+                                <li><a href="https://nester.fullstack.edu.vn" target="_blank" rel="noreferrer">Game
+                                        Nester</a></li>
+                                <li><a href="https://css-diner.fullstack.edu.vn" target="_blank" rel="noreferrer">Game
+                                        CSS Diner</a></li>
+                                <li><a href="https://css-selectors-cheatsheet.fullstack.edu.vn" target="_blank"
+                                        rel="noreferrer">Game CSS Selectors</a></li>
+                                <li><a href="https://froggy.fullstack.edu.vn" target="_blank" rel="noreferrer">Game
+                                        Froggy</a></li>
+                                <li><a href="https://froggy-pro.fullstack.edu.vn" target="_blank" rel="noreferrer">Game
+                                        Froggy Pro</a></li>
+                                <li><a href="https://css-scoops.fullstack.edu.vn" target="_blank" rel="noreferrer">Game
+                                        Scoops</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="index-module_col index-module_c-12 index-module_m-4 index-module_l-2">
+                    <div class="Footer_column">
+                        <div>
+                            <h2 class="Footer_heading-b">Công cụ</h2>
+                            <ul class="Footer_list">
+                                <li><a href="https://cv.fullstack.edu.vn/" target="_blank" rel="noreferrer">Tạo CV xin
+                                        việc</a></li>
+                                <li><a href="/shorten-urls">Rút gọn liên kết</a></li>
+                                <li><a href="https://clippy.fullstack.edu.vn/" target="_blank"
+                                        rel="noreferrer">Clip-path maker</a></li>
+                                <li><a href="https://snippet-generator.fullstack.edu.vn/" target="_blank"
+                                        rel="noreferrer">Snippet generator</a></li>
+                                <li><a href="https://botayra.fullstack.edu.vn/" target="_blank" rel="noreferrer">Cảnh
+                                        báo sờ tay lên mặt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="index-module_col index-module_c-12 index-module_m-6 index-module_l-3">
+                    <div class="Footer_column">
+                        <div>
+                            <h2 class="Footer_heading-b"><a target="_blank"
+                                    href="https://www.google.com/search?q=C%C3%94NG+TY+C%E1%BB%94+PH%E1%BA%A6N+C%C3%94NG+NGH%E1%BB%86+GI%C3%81O+D%E1%BB%A4C+F8"
+                                    rel="noreferrer">CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8</a></h2>
+                            <ul class="Footer_list">
+                                <li>Mã số thuế: 0109922901</li>
+                                <li>Ngày thành lập: 04/03/2022</li>
+                                <li>Lĩnh vực: Công nghệ, giáo dục, lập trình. F8 xây dựng và phát triển những sản phẩm
+                                    mang lại giá trị cho cộng đồng.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="index-module_row">
+                <section
+                    class="index-module_col index-module_c-12 index-module_m-12 index-module_l-12">
+                    <div class="Footer_bottom">
+                        <p class="Footer_copyright">© 2018 - 2023 F8. Nền tảng học lập trình hàng đầu Việt Nam
+                        </p>
+                        <div class="Footer_social-list"><a
+                                class="Footer_social-item social-item-first Footer_youtube"
+                                href="https://www.youtube.com/c/F8VNOfficial" title="F8 trên Youtube" target="_blank"
+                                rel="noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                                    data-icon="youtube-square" class="svg-inline--fa fa-youtube-square " role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z">
+                                    </path>
+                                </svg></a><a class="Footer_social-item Footer_facebook"
+                                href="https://www.facebook.com/taomanhduc.IT" title="F8 trên Facebook"
+                                target="_blank" rel="noreferrer"><svg aria-hidden="true" focusable="false"
+                                    data-prefix="fab" data-icon="facebook-square"
+                                    class="svg-inline--fa fa-facebook-square " role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.3V327.7h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0 -48-48z">
+                                    </path>
+                                </svg></a><a class="Footer_social-item Footer_tiktok"
+                                href="https://www.tiktok.com/@f8official" title="F8 trên Tiktok" target="_blank"
+                                rel="noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                                    data-icon="tiktok" class="svg-inline--fa fa-tiktok " role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.25V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.2 121.2 0 0 0 1.86 22.17h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.14z">
+                                    </path>
+                                </svg></a></div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </footer>
+    </div>
+
+<script>
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCX6Os6vlyvO02NsQkySZkp6j0zxa5tMbw",
+  authDomain: "team-e73db.firebaseapp.com",
+  projectId: "team-e73db",
+  storageBucket: "team-e73db.appspot.com",
+  messagingSenderId: "1024602347629",
+  appId: "1:1024602347629:web:1925016245907712560764",
+  measurementId: "G-04P1ESHFEG"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+
+
+
+
+</body>
+
+</html>
